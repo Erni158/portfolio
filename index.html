@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body onload="openContent()">
+<div id="mySidenav" class="sidenav">
+  <span class="closebtn" onclick="closeNav()">&times;</span>
+  <div class="block">
+  	<i class="fa fa-bars" aria-hidden="true"></i>
+  		<span class="inscription">Menu</span>
+  </div>
+  <div class="block">
+  	<i class="fa fa-home" aria-hidden="true"></i>
+  		<span class="inscription">Home</span>
+  </div>
+  <div class="block">
+  	<span class="inscription">Contact</span>
+  </div>
+  <div class="block">
+  	<span class="inscription">Gallery</span>
+  </div>
+  <div class="block">
+  	<span class="inscription">Experience</span>
+  </div>
+  <div class="block">
+  	<span class="inscription">Home</span>
+  </div>
+  <div class="block"></div>
+</div>
+<div id="container">
+	<div id="main">
+		<p style="font-size:45px;cursor:pointer;color:white;margin: 0;" onclick="openNav()">&#9776;</p>
+	</div>
+	<div id="content">
+		<span id="initials"></span>
+	</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

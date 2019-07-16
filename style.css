@@ -1,0 +1,111 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	background-color: #fff;
+}
+
+.sivenav span{
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav span{
+	cursor: pointer;
+}
+
+.sidenav span:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.block{
+	background-color: #000;
+	height: 80px;
+	width: 80px;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	color: #fff;
+	overflow: hidden;
+}
+
+.block > i{
+	font-size: 42px;
+	text-align: center;
+	display: block;
+	margin-top: 15px;
+	color: yellow;
+}
+
+.inscription{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: -80px;
+	display: block;
+	text-align: center;
+	transition: 1s;
+	font-family: "Comic Sans";
+}
+
+#main{
+	transition: margin-left .5s;
+	position: relative;
+}
+
+#content{
+	position: absolute;
+	width: 0;
+	height: 5px;
+	background-color: rgba(255, 255, 255, 0.79);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	transition: 1s;
+	text-align: center;
+}
+
+#initials{
+	opacity: 0;
+	color: #000;
+	font-size: 60px;
+	transition: 1s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+	.sidenav span {font-size: 18px;}
+}
